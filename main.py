@@ -8,7 +8,6 @@ def main():
     Основной блок программы, выводит информацию о последних пяти оперциях
     :return: последние пять оперций
     """
-    print(get_list_of_recent_operations())
     for elem in get_list_of_recent_operations():
         print(f"{get_data(elem)} {elem['description']}")
         print(f"{teaching_purpose_of_payment(elem)}")
